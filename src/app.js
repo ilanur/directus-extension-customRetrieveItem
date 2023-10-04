@@ -2,7 +2,7 @@ import { defineOperationApp } from "@directus/extensions-sdk";
 
 export default defineOperationApp({
 	id: 'retrieve-item',
-	name: 'Get Angel',
+	name: 'Get Item',
 	icon: 'box',
 	description: 'Get the item corresponding to the given date',
 	overview: ({ date }) => [

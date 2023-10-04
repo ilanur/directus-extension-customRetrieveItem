@@ -10,7 +10,7 @@ export default defineOperationApi({
 		{services, database, getSchema}
 	) => {
 		try {
-			const result = await retrieveItem(date, database);
+			const result = await retrieveItem(date, database, table_name);
 			return result;
 		} catch (error) {
 			console.error('Error: ', error);
@@ -20,7 +20,7 @@ export default defineOperationApi({
 });
 
 
-async function retrieveItem(date, database) {
+async function retrieveItem(date, database, table_name) {
 
 	//HERE GOES THE CUSTOM FUNCTION//
 	const birthDayDate = new Date(date);
