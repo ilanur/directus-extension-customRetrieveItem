@@ -52,7 +52,7 @@ async function retrieveItem(date, database, table_name) {
 	  });
   
 	  return {
-		response: foundAngel
+		response: foundItem
 	};
 } catch (error) {
 	  console.error('Error: ', error);
